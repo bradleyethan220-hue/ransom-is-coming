@@ -1,4 +1,5 @@
 using System;
+using System.Drawing;
 
 namespace CursedPopupGame
 {
@@ -23,6 +24,11 @@ namespace CursedPopupGame
         public static string GetRandomInsult()
         {
             return insults[rnd.Next(insults.Length)];
+        }
+
+        public static Bitmap GetFaceBitmap()
+        {
+            return new Icon("Icons/main.ico").ToBitmap();
         }
     }
 }
